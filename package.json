@@ -1,0 +1,77 @@
+{
+    "name": "secretforge",
+    "version": "1.0.0",
+    "description": "Generate all types of secrets — JWT, cron, API keys, passwords, database credentials, encryption keys, OAuth, webhooks, sessions, UUIDs, and more. Zero dependencies.",
+    "main": "index.js",
+    "bin": {
+        "secretforge": "./bin/cli.js"
+    },
+    "scripts": {
+        "test": "node test/index.test.js",
+        "generate:env": "node -e \"console.log(require('./index').dotenv({ appName: 'MyApp' }))\"",
+        "lint": "echo 'No linter configured'"
+    },
+    "keywords": [
+        "secret",
+        "secret-generator",
+        "jwt",
+        "jwt-secret",
+        "jwt-refresh",
+        "api-key",
+        "api-key-generator",
+        "password-generator",
+        "passphrase",
+        "cron-secret",
+        "encryption-key",
+        "aes",
+        "rsa",
+        "token",
+        "uuid",
+        "nanoid",
+        "oauth",
+        "pkce",
+        "webhook",
+        "webhook-secret",
+        "session",
+        "session-secret",
+        "csrf",
+        "cookie-secret",
+        "security",
+        "crypto",
+        "key-generator",
+        "dotenv",
+        "env-generator",
+        "database-password",
+        "redis",
+        "postgres",
+        "mongodb",
+        "mysql",
+        "hmac",
+        "salt",
+        "nonce",
+        "encryption",
+        "hashing"
+    ],
+    "author": "TypeAbdullah",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TypeAbdullah/secretforge.git"
+    },
+    "bugs": {
+        "url": "https://github.com/TypeAbdullah/secretforge/issues"
+    },
+    "homepage": "https://github.com/TypeAbdullah/secretforge#readme",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "files": [
+        "index.js",
+        "src/",
+        "bin/",
+        "README.md",
+        "LICENSE"
+    ],
+    "dependencies": {},
+    "devDependencies": {}
+}
